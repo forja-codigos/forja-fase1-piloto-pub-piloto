@@ -1,0 +1,9 @@
+name: deploy-staging
+on:
+  workflow_dispatch:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: staging
+    steps:
+      - run: echo "DEPLOY DUMMY EXECUTOU (nao deveria sem approve)"
